@@ -6,7 +6,7 @@
   "description": "Leedom's ESlint config presets",
   "scripts": {
     "lint": "lint .",
-    "release": "bumpp -r && pnpm -r publish --access publish"
+    "release": "bumpp -r && pnpm -r publish --access public"
   },
   "keywords": [
     "eslint-config"
