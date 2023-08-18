@@ -1,6 +1,8 @@
 # @leedomjs/eslint-config
 
-> For Vue2 / Vue3
+> For Vue 2 / Vue 3
+>
+> Inspired by [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 
 ## Usage
 ### Install
