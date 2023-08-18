@@ -5,7 +5,7 @@
 ## Usage
 ### Install
 ```bash
-pnpm add -D eslint @leedomjs/eslint
+pnpm add -D eslint @leedomjs/eslint-config
 ```
 
 ### Config `.eslintrc`
