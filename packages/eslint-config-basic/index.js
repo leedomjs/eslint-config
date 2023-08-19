@@ -65,6 +65,7 @@ module.exports = {
       },
     ],
     'handle-callback-err': [2, '^(err|error)$'],
+    'id-length': [2, { max: 24 }],
     indent: [
       2,
       2,
@@ -182,8 +183,10 @@ module.exports = {
     'no-useless-computed-key': 2,
     'no-useless-constructor': 2,
     'no-useless-escape': 0,
+    'no-var': 2,
     'no-whitespace-before-property': 2,
     'no-with': 2,
+    'object-shorthand': 1,
     'one-var': [
       2,
       {
