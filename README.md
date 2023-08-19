@@ -59,8 +59,6 @@ Add the following settings to your `settings.json`:
    "javascript",
     "javascriptreact",
     "vue",
-    "html",
-    "json",
   ]
 }
 ```

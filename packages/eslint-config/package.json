@@ -1,7 +1,7 @@
 {
   "name": "@leedomjs/eslint-config",
   "version": "0.1.1",
-  "description": "Leedom's ESlint config",
+  "description": "Leedom's ESlint config presets",
   "main": "index.js",
   "repository": {
     "type": "git",
