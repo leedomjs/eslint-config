@@ -65,7 +65,7 @@ module.exports = {
       },
     ],
     'handle-callback-err': [2, '^(err|error)$'],
-    'id-length': [2, { min: 1, max: 40 }],
+    'id-length': [2, { min: 1, max: 30 }],
     indent: [
       2,
       2,
