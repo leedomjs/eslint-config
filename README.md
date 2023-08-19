@@ -62,3 +62,16 @@ Add the following settings to your `settings.json`:
   ]
 }
 ```
+
+### Tips
+
+You can override the rules in your `.eslintrc` file.
+
+```jsonc
+{
+  "extends": "@leedomjs",
+  "rules": {
+    // your rules...
+  }
+}
+```
