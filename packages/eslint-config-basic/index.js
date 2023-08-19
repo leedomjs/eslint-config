@@ -163,6 +163,7 @@ module.exports = {
     'no-shadow-restricted-names': 2,
     'no-spaced-func': 2,
     'no-sparse-arrays': 2,
+    'no-template-curly-in-string': 2,
     'no-this-before-super': 2,
     'no-throw-literal': 2,
     'no-trailing-spaces': 2,
@@ -204,6 +205,7 @@ module.exports = {
       },
     ],
     'padded-blocks': [2, 'never'],
+    'prefer-template': 2,
     quotes: [
       2,
       'single',
