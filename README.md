@@ -1,7 +1,5 @@
 # @leedomjs/eslint-config
 
-> For Vue 2 / Vue 3
->
 > Inspired by [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 
 ## Usage
@@ -18,7 +16,8 @@ pnpm add -D eslint @leedomjs/eslint-config
 ```
 
 Add script for `package.json`
-for example:
+
+For example:
 ```json
 {
   "script": {
