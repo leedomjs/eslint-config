@@ -1,1 +1,1 @@
-This is a fixture cloned from `https://github.com/leedom92/vue-h5-template`. It's only for lint checking and does not run.
+This is a fixture cloned from https://github.com/leedom92/vue-h5-template. It's only for lint checking and does not run.
