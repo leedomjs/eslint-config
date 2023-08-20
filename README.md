@@ -7,6 +7,7 @@
 - Single quotes, no semi
 - Auto fix for formatting
 - Available for vue 2 & 3
+- Also lint for json
 - Only one-line of config
 
 ## Usage
@@ -59,6 +60,9 @@ Add the following settings to your `settings.json`:
    "javascript",
     "javascriptreact",
     "vue",
+    "json",
+    "jsonc",
+    "json5"
   ]
 }
 ```

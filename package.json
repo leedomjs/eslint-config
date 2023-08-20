@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "private": true,
   "packageManager": "pnpm@8.6.12",
-  "description": "Leedom's ESlint config presets",
+  "description": "Leedom's ESLint config presets",
   "scripts": {
     "lint": "eslint .",
     "release": "bumpp -r && pnpm -r publish --access public"
