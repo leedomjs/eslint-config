@@ -5,7 +5,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: ['eslint:recommended'],
+  extends: ['eslint:recommended', 'plugin:jsonc/recommended-with-jsonc'],
   parserOptions: {
     ecmaVersion: 'latest',
   },
@@ -264,4 +264,21 @@ module.exports = {
     ],
     'array-bracket-spacing': [2, 'never'],
   },
+  overrides: [
+    {
+      files: ['*.json', '*.json5', '*.jsonc'],
+      parser: 'jsonc-eslint-parser',
+      rules: {
+        'jsonc/array-bracket-spacing': [2, 'never'],
+        'jsonc/comma-dangle': [2, 'never'],
+        'jsonc/comma-style': [2, 'last'],
+        'jsonc/indent': [2, 2],
+        'jsonc/key-spacing': [2, { beforeColon: false, afterColon: true }],
+        'jsonc/no-octal-escape': 2,
+        'jsonc/object-curly-newline': [2, { multiline: true, consistent: true }],
+        'jsonc/object-curly-spacing': [2, 'always'],
+        'jsonc/object-property-newline': [2, { allowMultiplePropertiesPerLine: true }],
+      },
+    },
+  ],
 }
