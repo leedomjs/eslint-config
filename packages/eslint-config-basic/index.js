@@ -280,5 +280,39 @@ module.exports = {
         'jsonc/object-property-newline': [2, { allowMultiplePropertiesPerLine: true }],
       },
     },
+    {
+      files: ['package.json'],
+      parser: 'jsonc-eslint-parser',
+      rules: {
+        'jsonc/sort-keys': [
+          2,
+          {
+            'pathPattern': '^$',
+            'order': [
+              'name',
+              'type',
+              'version',
+              'private',
+              'packageManager',
+              'description',
+              'keywords',
+              'author',
+              'license',
+              'homepage',
+              'repository',
+              'bugs',
+              'scripts',
+              'peerDependencies',
+              'dependencies',
+              'devDependencies',
+            ],
+          },
+          {
+            'pathPattern': '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
+            'order': { 'type': 'asc' },
+          },
+        ],
+      },
+    },
   ],
 }
