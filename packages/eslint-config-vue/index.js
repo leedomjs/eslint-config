@@ -19,6 +19,14 @@ module.exports = {
     'vue/multiline-html-element-content-newline': 0,
     'vue/no-v-html': 0,
     'vue/require-default-prop': 0,
+    'vue/eqeqeq': 2,
+    'vue/component-tags-order': [
+      2,
+      {
+        order: ['script', 'template', 'style'],
+      },
+    ],
+    'vue/no-potential-component-option-typo': 2,
   },
   overrides: [
     {
