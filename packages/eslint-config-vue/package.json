@@ -3,19 +3,19 @@
   "version": "0.4.0",
   "description": "",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leedomjs/eslint-config.git"
-  },
   "keywords": [
     "eslint-config"
   ],
   "author": "Leedom",
   "license": "MIT",
+  "homepage": "https://github.com/leedomjs/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leedomjs/eslint-config.git"
+  },
   "bugs": {
     "url": "https://github.com/leedomjs/eslint-config/issues"
   },
-  "homepage": "https://github.com/leedomjs/eslint-config",
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },

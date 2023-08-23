@@ -3,26 +3,26 @@
   "version": "0.4.0",
   "description": "Leedom's ESLint config presets",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leedomjs/eslint-config.git"
-  },
   "keywords": [
     "eslint-config"
   ],
   "author": "Leedom",
   "license": "MIT",
+  "homepage": "https://github.com/leedomjs/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leedomjs/eslint-config.git"
+  },
   "bugs": {
     "url": "https://github.com/leedomjs/eslint-config/issues"
   },
-  "homepage": "https://github.com/leedomjs/eslint-config",
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
-  "devDependencies": {
-    "eslint": "^8.47.0"
-  },
   "dependencies": {
     "@leedomjs/eslint-config-vue": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0"
   }
 }

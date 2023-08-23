@@ -4,15 +4,15 @@
   "private": true,
   "packageManager": "pnpm@8.6.12",
   "description": "Leedom's ESLint config presets",
-  "scripts": {
-    "lint": "eslint .",
-    "release": "bumpp -r && pnpm -r publish --access public"
-  },
   "keywords": [
     "eslint-config"
   ],
   "author": "Leedom",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "release": "bumpp -r && pnpm -r publish --access public"
+  },
   "devDependencies": {
     "@leedomjs/eslint-config": "workspace:*",
     "bumpp": "^9.1.1",
