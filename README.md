@@ -26,13 +26,13 @@ pnpm add -D eslint @leedomjs/eslint-config
 }
 ````
 
-### Add script for `package.json`
+### Add scripts for `package.json`
 
 For example:
 
 ```json
 {
-  "script": {
+  "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   }
@@ -67,9 +67,9 @@ Add the following settings to your `settings.json`:
 }
 ```
 
-### Tips
+## Tips
 
-- You can override the rules in your `.eslintrc` file.
+You can override the rules in your `.eslintrc` file.
 
   ```jsonc
   {
@@ -80,7 +80,7 @@ Add the following settings to your `settings.json`:
   }
   ```
 
-- No framework used, just for javascript, you can also use the package `@leedomjs/eslint-config-basic`
+No framework used, just for javascript, you can also use the package `@leedomjs/eslint-config-basic`
   ```jsonc
   // .eslintrc
   {
@@ -89,5 +89,5 @@ Add the following settings to your `settings.json`:
 
   ```
 
-### License
+## License
 [MIT](https://github.com/leedomjs/eslint-config/blob/main/LICENSE) License © 2023-present [Leedom](https://github.com/leedom92)
