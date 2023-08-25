@@ -20,7 +20,7 @@ module.exports = {
     'vue/no-v-html': 0,
     'vue/require-default-prop': 0,
     'vue/eqeqeq': [2, 'smart'],
-    'vue/component-tags-order': [
+    'vue/block-order': [
       2,
       {
         order: ['script', 'template', 'style'],
