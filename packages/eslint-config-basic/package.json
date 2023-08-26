@@ -24,6 +24,6 @@
     "jsonc-eslint-parser": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^8.47.0"
+    "eslint": "^8.48.0"
   }
 }
