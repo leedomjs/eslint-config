@@ -316,5 +316,27 @@ module.exports = {
         ],
       },
     },
+    {
+      files: ['manifest.json'],
+      parser: 'jsonc-eslint-parser',
+      rules: {
+        'jsonc/sort-keys': [
+          2,
+          {
+            'pathPattern': '^$',
+            'order': [
+              'manifest_version',
+              'name',
+              'version',
+              'description',
+              'homepage_url',
+              'icons',
+              'action',
+              'content_scripts',
+            ],
+          },
+        ],
+      },
+    },
   ],
 }
