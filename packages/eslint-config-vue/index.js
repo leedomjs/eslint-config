@@ -49,6 +49,13 @@ module.exports = {
     'vue/padding-line-between-blocks': 2,
     'vue/prefer-separate-static-class': 2,
     'vue/space-infix-ops': 2,
+    'vue/max-attributes-per-line': [
+      2,
+      {
+        singleline: 3,
+        multiline: 1,
+      },
+    ],
   },
   overrides: [
     {
