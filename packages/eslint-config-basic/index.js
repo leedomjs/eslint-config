@@ -55,7 +55,7 @@ module.exports = {
     'constructor-super': 2,
     curly: [2, 'multi-line'],
     'dot-location': [2, 'property'],
-    'eol-last': 2,
+    'eol-last': 1,
     eqeqeq: [2, 'always', { null: 'ignore' }],
     'generator-star-spacing': [
       2,
@@ -141,6 +141,8 @@ module.exports = {
       2,
       {
         max: 1,
+        maxEOF: 0,
+        maxBOF: 0,
       },
     ],
     'no-native-reassign': 2,
