@@ -67,6 +67,43 @@ Add the following settings to your `settings.json`:
 }
 ```
 
+### Husky + Lint-staged
+
+If you want to apply lint and auto-fix before every commit, you could install [`husky`](https://github.com/typicode/husky) & [`lint-staged`](https://github.com/okonet/lint-staged)
+
+```bash
+pnpm dlx husky-init && pnpm install -D husky lint-staged
+```
+
+and add the following to your `package.json`:
+
+```jsonc
+{
+  "scripts": {
+    // This script will be added automatically when husky is installed successfully.
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
+  }
+}
+```
+
+then add the following to your `pre-commit`:
+
+> .husky/pre-commit
+
+```sh
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# remove the default script
+# npx test
+
+# add this script
+npx lint-staged
+```
+
 ## Tips
 
 You can override the rules in your `.eslintrc` file.
