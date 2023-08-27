@@ -2,7 +2,6 @@
   "name": "@leedomjs/eslint-config-basic",
   "version": "0.7.1",
   "description": "",
-  "main": "index.js",
   "keywords": [
     "eslint-config"
   ],
@@ -16,6 +15,7 @@
   "bugs": {
     "url": "https://github.com/leedomjs/eslint-config/issues"
   },
+  "main": "index.js",
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
