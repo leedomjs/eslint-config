@@ -11,17 +11,19 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "release": "bumpp -r && pnpm -r publish --access public",
-    "prepare": "husky install"
+    "release": "bumpp -r && pnpm -r publish --access public"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*": "eslint . --fix"
+    "*": "eslint --fix"
   },
   "devDependencies": {
     "@leedomjs/eslint-config": "workspace:*",
     "bumpp": "^9.2.0",
     "eslint": "^8.48.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1"
+    "lint-staged": "^14.0.1",
+    "simple-git-hooks": "^2.9.0"
   }
 }
