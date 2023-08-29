@@ -67,9 +67,11 @@ Add the following settings to your `settings.json`:
 }
 ```
 
-### Husky + Lint-staged
+### Lint and auto-fix before every commit
 
-If you want to apply lint and auto-fix before every commit, you could install [`husky`](https://github.com/typicode/husky) & [`lint-staged`](https://github.com/okonet/lint-staged)
+If you want to apply lint and auto-fix before every commit, you could do this:
+
+#### 1. [husky](https://github.com/typicode/husky) + [`lint-staged`](https://github.com/okonet/lint-staged)
 
 ```bash
 pnpm dlx husky-init && pnpm install -D husky lint-staged
@@ -84,7 +86,7 @@ and add the following to your `package.json`:
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*": "eslint . --fix"
+    "*": "eslint --fix"
   }
 }
 ```
@@ -102,6 +104,38 @@ then add the following to your `pre-commit`:
 
 # add this script
 npx lint-staged
+```
+
+#### 2. [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) + [`lint-staged`](https://github.com/okonet/lint-staged)
+
+If your project is small-sized, and you need quickly set up hooks and forget about it, `simple-git-hook` will be a good choice.
+
+```bash
+pnpm install -D simple-git-hooks lint-staged
+```
+
+and add the following to your `package.json`:
+
+```jsonc
+{
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
+  }
+}
+```
+
+then run the CLI script to update the git hooks with the commands from the config:
+
+```bash
+# [Optional] These 2 steps can be skipped for non-husky users
+git config core.hooksPath .git/hooks/
+rm -rf .git/hooks
+
+# Update ./git/hooks
+npx simple-git-hooks
 ```
 
 ## Tips
@@ -123,7 +157,6 @@ No framework used, just for javascript, you can also use the package `@leedomjs/
   {
     "extends": "@leedomjs/eslint-config-basic"
   }
-
   ```
 
 ## License
