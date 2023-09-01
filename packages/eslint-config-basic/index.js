@@ -226,6 +226,7 @@ module.exports = {
         allowTemplateLiterals: true,
       },
     ],
+    'quote-props': ['error', 'as-needed'],
     semi: [2, 'never'],
     'semi-spacing': [
       2,

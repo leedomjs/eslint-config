@@ -1,4 +1,5 @@
 const { getPackageInfoSync } = require('local-pkg')
+
 const vue = getPackageInfoSync('vue')
 const isVue2 = vue && vue.version && vue.version.startsWith('2.')
 
