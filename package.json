@@ -17,7 +17,7 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,vue}": "eslint --fix"
+    "*.{js,json,vue}": "eslint . --fix"
   },
   "devDependencies": {
     "@leedomjs/eslint-config": "workspace:*",
