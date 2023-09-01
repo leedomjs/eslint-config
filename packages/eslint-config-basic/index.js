@@ -5,7 +5,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: ['eslint:recommended', 'plugin:jsonc/recommended-with-jsonc'],
+  extends: ['eslint:recommended', 'plugin:import/recommended', 'plugin:jsonc/recommended-with-jsonc'],
   parserOptions: {
     ecmaVersion: 'latest',
   },
@@ -18,7 +18,17 @@ module.exports = {
     'yarn.lock',
     '*.min.*',
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js',
+        ],
+      },
+    },
+  },
   rules: {
+    // common
     'accessor-pairs': 2,
     'arrow-body-style': [2, 'as-needed'],
     'arrow-spacing': [
@@ -28,7 +38,7 @@ module.exports = {
         after: true,
       },
     ],
-    'arrow-parens': [2, 'as-needed', { 'requireForBlockBody': true }],
+    'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
     'block-spacing': [2, 'always'],
     'brace-style': [
       2,
@@ -265,6 +275,15 @@ module.exports = {
       },
     ],
     'array-bracket-spacing': [2, 'never'],
+
+    // import
+    'import/order': 2,
+    'import/first': 2,
+    'import/no-self-import': 2,
+    'import/no-webpack-loader-syntax': 2,
+    'import/no-unresolved': 0,
+    'import/no-mutable-exports': 2,
+    'import/newline-after-import': [2, { count: 1, considerComments: true }],
   },
   overrides: [
     {
@@ -289,8 +308,8 @@ module.exports = {
         'jsonc/sort-keys': [
           2,
           {
-            'pathPattern': '^$',
-            'order': [
+            pathPattern: '^$',
+            order: [
               'name',
               'type',
               'version',
@@ -316,8 +335,8 @@ module.exports = {
             ],
           },
           {
-            'pathPattern': '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            'order': { 'type': 'asc' },
+            pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
+            order: { type: 'asc' },
           },
         ],
       },
@@ -329,8 +348,8 @@ module.exports = {
         'jsonc/sort-keys': [
           2,
           {
-            'pathPattern': '^$',
-            'order': [
+            pathPattern: '^$',
+            order: [
               'manifest_version',
               'name',
               'version',
