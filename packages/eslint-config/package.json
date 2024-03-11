@@ -23,6 +23,6 @@
     "@leedomjs/eslint-config-vue": "workspace:*"
   },
   "devDependencies": {
-    "eslint": "^8.48.0"
+    "eslint": "^8.52.0"
   }
 }
