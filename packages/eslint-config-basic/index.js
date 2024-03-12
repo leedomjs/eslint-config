@@ -280,6 +280,7 @@ module.exports = {
     // import
     'import/order': 2,
     'import/first': 2,
+    'import/named': 0,
     'import/no-self-import': 2,
     'import/no-webpack-loader-syntax': 2,
     'import/no-unresolved': 0,
