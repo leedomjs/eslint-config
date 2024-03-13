@@ -3,12 +3,17 @@ const { getPackageInfoSync } = require('local-pkg')
 const vue = getPackageInfoSync('vue')
 const isVue2 = vue && vue.version && vue.version.startsWith('2.')
 
+const vue3Rules = {
+  'vue/multi-word-component-names': 0,
+}
+
 module.exports = {
   extends: [
     isVue2 ? 'plugin:vue/recommended' : 'plugin:vue/vue3-recommended',
     '@leedomjs/eslint-config-basic',
   ],
   rules: {
+    ...(isVue2 ? {} : vue3Rules),
     'vue/first-attribute-linebreak': [
       2,
       {
