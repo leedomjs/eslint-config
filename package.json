@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "release": "bumpp -r && pnpm -r publish"
+    "release": "bumpp -r && pnpm -r publish --access public"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
