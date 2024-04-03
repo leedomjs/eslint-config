@@ -11,13 +11,13 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "release": "bumpp -r && pnpm -r publish --access public"
+    "release": "bumpp -r && pnpm -r publish"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,vue,ts}": "eslint . --fix"
+    "*": "eslint . --fix"
   },
   "devDependencies": {
     "@leedomjs/eslint-config": "workspace:*",
