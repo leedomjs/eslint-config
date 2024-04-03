@@ -7,7 +7,7 @@
 - Support Vue 2 & 3
 - Single quotes, no semi
 - Auto fix for formatting
-- Also lint for json
+- Also lint for TypeScript, json
 - Only one-line of config
 
 ## Usage
