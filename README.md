@@ -58,11 +58,18 @@ Add the following settings to your `settings.json`:
   // to avoid conflicts with working with different eslint configs.
   "eslint.validate": [
     "javascript",
-    "javascriptreact",
-    "vue",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "vue-html",
+    "jsx",
     "json",
     "jsonc",
-    "json5"
+    "json5",
+    "markdown",
+    "yaml"
   ]
 }
 ```

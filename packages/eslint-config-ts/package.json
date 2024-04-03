@@ -1,13 +1,16 @@
 {
-  "name": "@leedomjs/eslint-config-vue",
+  "name": "@leedomjs/eslint-config-ts",
   "version": "0.8.3",
   "description": "",
   "keywords": [
-    "eslint-config"
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "ts"
   ],
   "author": "Leedom",
   "license": "MIT",
-  "homepage": "https://github.com/leedomjs/eslint-config",
+  "homepage": "https://github.com/leedomjs/eslint-config#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leedomjs/eslint-config.git"
@@ -17,13 +20,12 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9 <5.4.0"
   },
   "dependencies": {
-    "@leedomjs/eslint-config-basic": "workspace:*",
-    "@leedomjs/eslint-config-ts": "workspace:*",
-    "eslint-plugin-vue": "^9.23.0",
-    "local-pkg": "^0.5.0"
+    "@antfu/eslint-config-ts": "^0.43.1",
+    "@leedomjs/eslint-config-basic": "workspace:*"
   },
   "devDependencies": {
     "eslint": "^8.57.0"

@@ -1,3 +1,5 @@
+const process = require('node:process')
+
 module.exports = {
   root: true,
   env: {
@@ -40,13 +42,7 @@ module.exports = {
     ],
     'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
     'block-spacing': [2, 'always'],
-    'brace-style': [
-      2,
-      '1tbs',
-      {
-        allowSingleLine: true,
-      },
-    ],
+    'brace-style': [2, 'stroustrup'],
     camelcase: [
       0,
       {
@@ -236,7 +232,7 @@ module.exports = {
       },
     ],
     'space-before-blocks': [2, 'always'],
-    'space-before-function-paren': [2, 'never'],
+    'space-before-function-paren': [2, { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
     'space-in-parens': [2, 'never'],
     'space-infix-ops': 2,
     'space-unary-ops': [

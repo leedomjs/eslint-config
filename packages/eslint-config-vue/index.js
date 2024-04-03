@@ -1,7 +1,14 @@
-const { getPackageInfoSync } = require('local-pkg')
+const { getPackageInfoSync, isPackageExists } = require('local-pkg')
 
+// Vue 2 or Vue 3
 const vue = getPackageInfoSync('vue')
 const isVue2 = vue && vue.version && vue.version.startsWith('2.')
+
+// TS
+const TS = isPackageExists('typescript')
+if (!TS) {
+  console.warn('[@leedomjs/eslint-config] TypeScript is not installed, support JS only.')
+}
 
 const vue3Rules = {
   'vue/multi-word-component-names': 0,
@@ -10,7 +17,7 @@ const vue3Rules = {
 module.exports = {
   extends: [
     isVue2 ? 'plugin:vue/recommended' : 'plugin:vue/vue3-recommended',
-    '@leedomjs/eslint-config-basic',
+    TS ? '@leedomjs/eslint-config-ts' : '@leedomjs/eslint-config-basic',
   ],
   rules: {
     ...(isVue2 ? {} : vue3Rules),
@@ -66,9 +73,16 @@ module.exports = {
   overrides: [
     {
       files: ['*.vue'],
+      parser: 'vue-eslint-parser',
+      parserOptions: {
+        parser: TS ? '@typescript-eslint/parser' : null,
+      },
       rules: {
         'no-unused-vars': 0,
         'no-undef': 0,
+        ...(TS
+          ? { '@typescript-eslint/no-unused-vars': 0 }
+          : null),
       },
     },
   ],
