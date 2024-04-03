@@ -1,6 +1,6 @@
 {
   "name": "@leedomjs/eslint-config",
-  "version": "0.8.3",
+  "version": "0.9.0",
   "description": "Leedom's ESLint config presets",
   "keywords": [
     "eslint-config"
