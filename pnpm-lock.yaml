@@ -85,7 +85,7 @@ importers:
         specifier: workspace:*
         version: link:../eslint-config-basic
       '@leedomjs/eslint-config-tailwindcss':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../eslint-config-tailwindcss
       '@leedomjs/eslint-config-ts':
         specifier: workspace:*
