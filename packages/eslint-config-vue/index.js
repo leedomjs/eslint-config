@@ -16,6 +16,7 @@ const vue3Rules = {
 
 module.exports = {
   extends: [
+    '@leedomjs/eslint-config-tailwindcss',
     isVue2 ? 'plugin:vue/recommended' : 'plugin:vue/vue3-recommended',
     TS ? '@leedomjs/eslint-config-ts' : '@leedomjs/eslint-config-basic',
   ],

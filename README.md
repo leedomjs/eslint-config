@@ -8,6 +8,7 @@
 - Single quotes, no semi
 - Auto fix for formatting
 - Also lint for TypeScript, json
+- Order tailwindcss classnames
 - Only one-line of config
 
 ## Usage
@@ -163,6 +164,17 @@ No framework used, just for javascript, you can also use the package `@leedomjs/
   // .eslintrc
   {
     "extends": "@leedomjs/eslint-config-basic"
+  }
+  ```
+
+If you are using `tailwindcss` , you can also add the package `@leedomjs/eslint-config-tailwindcss` which depend on [`eslint-plugin-tailwindcss`](https://github.com/francoismassart/eslint-plugin-tailwindcss) , so you don't need to add [`prettier-plugin-tailwindcss`](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) and [`prettier`](https://github.com/prettier/prettier) extra.
+  ```jsonc
+  // .eslintrc
+  {
+    "extends": [
+      "@leedomjs/eslint-config-tailwindcss",
+      ...
+    ]
   }
   ```
 
