@@ -42,7 +42,13 @@ module.exports = {
     ],
     'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
     'block-spacing': [2, 'always'],
-    'brace-style': [2, 'stroustrup'],
+    'brace-style': [
+      2,
+      '1tbs',
+      {
+        allowSingleLine: true,
+      },
+    ],
     camelcase: [
       0,
       {
