@@ -17,8 +17,10 @@ module.exports = {
     'temp',
     'package-lock.json',
     'pnpm-lock.yaml',
+    'pnpm-workspace.yaml',
     'yarn.lock',
     '*.min.*',
+    'LICENSE',
   ],
   settings: {
     'import/resolver': {
