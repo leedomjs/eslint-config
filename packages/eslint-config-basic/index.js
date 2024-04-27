@@ -16,11 +16,12 @@ module.exports = {
     'public',
     'temp',
     'package-lock.json',
-    'pnpm-lock.yaml',
-    'pnpm-workspace.yaml',
     'yarn.lock',
+    '*.yaml',
     '*.min.*',
     'LICENSE',
+    '*.md',
+    '*.html',
   ],
   settings: {
     'import/resolver': {
