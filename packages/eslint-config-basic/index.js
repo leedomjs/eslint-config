@@ -22,6 +22,7 @@ module.exports = {
     'LICENSE',
     '*.md',
     '*.html',
+    '*.d.ts',
   ],
   settings: {
     'import/resolver': {
