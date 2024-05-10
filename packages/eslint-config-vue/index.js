@@ -37,7 +37,7 @@ module.exports = {
     'vue/block-order': [
       2,
       {
-        order: ['script', 'template', 'style'],
+        order: [['script', 'template'], 'style'],
       },
     ],
     'vue/no-potential-component-option-typo': 2,
