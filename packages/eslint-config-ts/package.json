@@ -21,7 +21,7 @@
   "main": "index.js",
   "peerDependencies": {
     "eslint": ">=7.4.0 <9",
-    "typescript": ">=3.9 <5.4.0"
+    "typescript": ">=3.9 <=5.3.3"
   },
   "dependencies": {
     "@antfu/eslint-config-ts": "^0.43.1",
