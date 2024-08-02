@@ -264,6 +264,7 @@ module.exports = {
           '*package',
           '!',
           ',',
+          '/',
         ],
       },
     ],
