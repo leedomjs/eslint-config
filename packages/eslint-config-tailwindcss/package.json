@@ -1,6 +1,6 @@
 {
   "name": "@leedomjs/eslint-config-tailwindcss",
-  "version": "0.12.2",
+  "version": "0.12.3",
   "description": "",
   "keywords": [
     "eslint-config",

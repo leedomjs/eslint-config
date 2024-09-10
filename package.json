@@ -1,6 +1,6 @@
 {
   "name": "@leedomjs/eslint-config-monorepo",
-  "version": "0.12.2",
+  "version": "0.12.3",
   "private": true,
   "packageManager": "pnpm@9.10.0",
   "description": "Leedom's ESLint config presets",
