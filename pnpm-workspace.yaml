@@ -1,2 +1,15 @@
 packages:
   - 'packages/*'
+catalog:
+  '@antfu/eslint-config-ts': '^0.43.1'
+  'bumpp': '^9.5.2'
+  'eslint': '^8.57.0'
+  'eslint-plugin-import': '^2.30.0'
+  'eslint-plugin-jsonc': '^2.16.0'
+  'eslint-plugin-tailwindcss': '^3.17.4'
+  'eslint-plugin-vue': '^9.28.0'
+  'jsonc-eslint-parser': '^2.4.0'
+  'lint-staged': '^15.2.10'
+  'local-pkg': '^0.5.0'
+  'simple-git-hooks': '^2.11.1'
+  'typescript': '^5.3.3'

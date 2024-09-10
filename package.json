@@ -22,10 +22,10 @@
   },
   "devDependencies": {
     "@leedomjs/eslint-config": "workspace:*",
-    "bumpp": "^9.5.2",
-    "eslint": "^8.57.0",
-    "lint-staged": "^15.2.10",
-    "simple-git-hooks": "^2.11.1",
-    "typescript": "^5.3.3"
+    "bumpp": "catalog:",
+    "eslint": "catalog:",
+    "lint-staged": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "typescript": "catalog:"
   }
 }

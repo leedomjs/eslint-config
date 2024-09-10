@@ -20,11 +20,11 @@
     "eslint": ">=7.4.0 <9"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.30.0",
-    "eslint-plugin-jsonc": "^2.16.0",
-    "jsonc-eslint-parser": "^2.4.0"
+    "eslint-plugin-import": "catalog:",
+    "eslint-plugin-jsonc": "catalog:",
+    "jsonc-eslint-parser": "catalog:"
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "catalog:"
   }
 }
