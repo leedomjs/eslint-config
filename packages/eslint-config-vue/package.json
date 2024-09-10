@@ -27,7 +27,7 @@
     "@leedomjs/eslint-config-basic": "workspace:*",
     "@leedomjs/eslint-config-tailwindcss": "workspace:*",
     "@leedomjs/eslint-config-ts": "workspace:*",
-    "eslint-plugin-vue": "^9.27.0",
+    "eslint-plugin-vue": "^9.28.0",
     "local-pkg": "^0.5.0"
   },
   "devDependencies": {
