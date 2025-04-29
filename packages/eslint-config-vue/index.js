@@ -12,6 +12,10 @@ if (!TS) {
 
 const vue3Rules = {
   'vue/multi-word-component-names': 0,
+  'vue/v-bind-style': ['error', 'shorthand', {
+    sameNameShorthand: 'always',
+  }],
+  'vue/valid-v-bind': 0,
 }
 
 module.exports = {
